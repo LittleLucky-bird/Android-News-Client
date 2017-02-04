@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@id/toolbarfavorite"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#bebeaf"
+        android:minHeight="45dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:weightSum="1">
+    </android.support.v7.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/listfavorite"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#b5b5b5"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_selector"
+        android:layout_below="@id/toolbarfavorite" />
+
+
+</RelativeLayout>

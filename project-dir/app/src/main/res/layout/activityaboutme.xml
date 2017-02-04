@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@id/toolbaraboutme"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#bebeaf"
+        android:minHeight="45dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:weightSum="1">
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="350dp"
+        android:src="@drawable/wuyanzu"
+        android:id="@+id/imageView"
+        android:layout_below="@id/toolbaraboutme"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="姓名:汤鹏\n学号:2013010230\n院系:土木工程系\n班级:结三三"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:id="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView" />
+
+
+</RelativeLayout>

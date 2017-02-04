@@ -1,0 +1,56 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@id/toolbarselect"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#bebeaf"
+        android:minHeight="45dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:weightSum="1">
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Watched"
+        android:id="@+id/textViewwatched"
+        android:layout_below="@id/toolbarselect"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="151dp"
+        android:layout_marginEnd="151dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewwatched"
+        android:layout_below="@+id/textViewwatched"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unwatched"
+        android:id="@+id/textViewunwatched"
+        android:layout_below="@+id/listViewwatched"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="151dp"
+        android:layout_marginEnd="141dp" />
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewunwatched"
+        android:layout_below="@+id/textViewunwatched"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
